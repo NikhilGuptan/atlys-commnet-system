@@ -1,0 +1,126 @@
+/* createAccount.css */
+
+.create-account-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.create-account-content {
+    position: relative;
+    border: 2px solid #5F5F5F;
+    width: 480px;
+    background-color: #27292D;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #5F5F5F;
+}
+
+.welcome-text {
+    color: #5F5F5F;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.login-text {
+    font-weight: 450;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.email-div,
+.username-div,
+.password-div {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0px 30px;
+}
+
+.email-div p,
+.username-div p,
+.password-div p {
+    color: #C5C7CA;
+}
+
+.email-div input,
+.username-div input,
+.password-input-wrapper input {
+    border: 1px solid #5F5F5F;
+    border-radius: 5px;
+    background-color: #27292D;
+    color: #5F5F5F;
+    padding: 14px;
+    width: 100%;
+}
+
+.password-div-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-div-child p {
+    color: #C5C7CA;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-input-wrapper input {
+    padding-right: 30px; /* Space for the eye icon */
+    width: 95%;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #5F5F5F;
+}
+
+.login-button {
+    margin-top: 20px;
+    background-color: #4A96FF;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    width: 95%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.not-register-p {
+    color: #5F5F5F;
+    margin-bottom: 20px;
+}
+
+.not-register-p span {
+    color: #9E9FA2;
+    text-align: start;
+    display: inline-flex;
+    align-items: center;
+}
+
+.not-register-p span svg {
+    margin-left: 5px;
+}
