@@ -1,5 +1,4 @@
-
-.login-parent{
+.login-parent {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,7 +6,7 @@
     justify-content: center;
 }
 
-.login-screen-div{
+.login-screen-div {
     border: 2px solid #5F5F5F;
     /* height: 400px; */
     width: 480px;
@@ -17,20 +16,20 @@
     text-align: center;
 }
 
-.welcome-text{
+.welcome-text {
     color: #5F5F5F;
     margin-top: 40px;
     margin-bottom: 5px;
 }
 
-.login-text{
+.login-text {
     font-weight: 450;
     font-size: 22px;
     color: #FFFFFF;
     margin-top: 0;
 }
 
-.email-div{
+.email-div {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -38,11 +37,11 @@
     margin-right: 30px;
 }
 
-.email-div p{
+.email-div p {
     color: #C5C7CA;
 }
 
-.email-div input{
+.email-div input {
     border: 1px solid #5F5F5F;
     border-radius: 5px;
     background-color: #27292D;
@@ -50,7 +49,7 @@
     padding: 14px;
 }
 
-.password-div{
+.password-div {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -58,24 +57,40 @@
     margin-right: 30px;
 }
 
-.password-div-child{
+.password-div-child {
     display: flex;
     justify-content: space-between;
 }
 
-.password-div-child p{
+.password-div-child p {
     color: #C5C7CA;
 }
 
-.password-div input{
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-input-wrapper input {
+    width: 94%;
+    padding-right: 30px; /* Space for the eye icon */
     border: 1px solid #5F5F5F;
     border-radius: 5px;
     background-color: #27292D;
     color: #5F5F5F;
     padding: 14px;
+    margin-right: 30px;
 }
 
-.login-button{
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #5F5F5F;
+}
+
+.login-button {
     margin-top: 20px;
     background-color: #4A96FF;
     color: #FFFFFF;
@@ -85,11 +100,17 @@
     font-size: 16px;
 }
 
-.not-register-p{
-    color: #5F5F5F;   
+.not-register-p {
+    color: #5F5F5F;
 }
 
-.not-register-p span{
+.not-register-p span {
     color: #9E9FA2;
     text-align: start;
+    display: inline-flex;
+    align-items: center;
+}
+
+.not-register-p span svg {
+    margin-left: 5px;
 }
