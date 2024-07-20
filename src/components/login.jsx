@@ -1,5 +1,6 @@
 import React from 'react'
 import "./login.css"
+import { FaArrowRight } from 'react-icons/fa';
 
 function Login(){
     return(
@@ -19,7 +20,7 @@ function Login(){
                     <input type="text" placeholder='Enter your password' />
                 </div>
                 <button className='login-button'>Login Now</button>
-                <p className='not-register-p'>Not registered yet? <span>Register</span></p>
+                <p className='not-register-p'>Not registered yet? <span>Register <FaArrowRight /></span></p>
             </div>
         </div>
     )
