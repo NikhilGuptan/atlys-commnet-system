@@ -14,18 +14,13 @@ function CreateAccount({ onClose }) {
         setPasswordVisible(!passwordVisible);
     };
 
-    const handleSignUp = () => {
-        // Add your sign-up logic here
-        navigate('/post');
-    };
-
     return (
-        <div className='create-account-modal'>
-            <div className='create-account-content'>
-                <span className='close-icon' onClick={onClose}><FaTimes /></span>
-                <p className='welcome-text'>SIGN UP</p>
-                <p className='login-text'>Create an account to continue</p>
-                <div className='email-div'>
+        <div className='continue-create-account-modal'>
+            <div className='continue-create-account-content'>
+                <span className='continue-close-icon' onClick={onClose}><FaTimes /></span>
+                <p className='continue-welcome-text'>SIGN UP</p>
+                <p className='continue-login-text'>Create an account to continue</p>
+                <div className='continue-email-div'>
                     <p>Email</p>
                     <input
                         type="text"
@@ -34,7 +29,7 @@ function CreateAccount({ onClose }) {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
-                <div className='username-div'>
+                <div className='continue-username-div'>
                     <p>Username</p>
                     <input
                         type="text"
@@ -43,24 +38,24 @@ function CreateAccount({ onClose }) {
                         onChange={(e) => setUsername(e.target.value)}
                     />
                 </div>
-                <div className='password-div'>
-                    <div className='password-div-child'>
+                <div className='continue-password-div'>
+                    <div className='continue-password-div-child'>
                         <p>Password</p>
                     </div>
-                    <div className='password-input-wrapper'>
+                    <div className='continue-password-input-wrapper'>
                         <input
                             type={passwordVisible ? 'text' : 'password'}
                             placeholder='Enter your password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <span className='eye-icon' onClick={togglePasswordVisibility}>
+                        <span className='continue-eye-icon' onClick={togglePasswordVisibility}>
                             {passwordVisible ? <FaEyeSlash /> : <FaEye />}
                         </span>
                     </div>
                 </div>
-                <button className='login-button' onClick={handleSignUp}>Continue</button>
-                <p className='not-register-p'>Already have an account? <span>Login <FaArrowRight /></span></p>
+                <button className='continue-login-button' onClick={onClose}>Continue</button>
+                <p className='continue-not-register-p'>Already have an account? <span>Login <FaArrowRight /></span></p>
             </div>
         </div>
     );
