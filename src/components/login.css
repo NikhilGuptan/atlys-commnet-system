@@ -98,10 +98,12 @@
     border-radius: 5px;
     width: 88%;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .not-register-p {
     color: #5F5F5F;
+    margin-bottom: 40px;
 }
 
 .not-register-p span {
