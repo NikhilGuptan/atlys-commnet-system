@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./login.css";
 import { FaArrowRight, FaEye, FaEyeSlash } from 'react-icons/fa';
 
@@ -6,9 +7,15 @@ function Login() {
     const [email, setEmail] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
+    };
+
+    const handleLogin = () => {
+        // Add your login logic here
+        navigate('/post');
     };
 
     return (
@@ -42,7 +49,7 @@ function Login() {
                         </span>
                     </div>
                 </div>
-                <button className='login-button'>Login Now</button>
+                <button className='login-button' onClick={handleLogin}>Login Now</button>
                 <p className='not-register-p'>Not registered yet? <span>Register <FaArrowRight /></span></p>
             </div>
         </div>
